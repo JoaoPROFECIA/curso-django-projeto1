@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.home),
-    path('recipes/<int:id>/', views.recipe)
+    path('', views.recipe),
+    path('recipes/<int:id>/', views.recipe),  # <int:id> is a dynamic route
 ]
